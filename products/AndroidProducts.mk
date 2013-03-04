@@ -52,6 +52,15 @@ endif
 ifeq (pac_d2vzw,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_d2vzw.mk
 endif
+ifeq (pac_i605,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_i605.mk
+endif
+ifeq (pac_l900,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_l900.mk
+endif
+ifeq (pac_captivatemtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_captivatemtd.mk
+endif
 ifeq (pac_i9100,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_i9100.mk
 endif
@@ -64,6 +73,45 @@ endif
 ifeq (pac_p990,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p990.mk
 endif
+ifeq (pac_hercules,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_hercules.mk
+endif
 ifeq (pac_p1,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p1.mk
+endif
+ifeq (pac_t0lte,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_t0lte.mk
+endif
+ifeq (pac_shooter,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_shooter.mk
+endif
+ifeq (pac_shootervm,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_shootervm.mk
+endif
+ifeq (pac_shooteru,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_shooteru.mk
+endif
+ifeq (pac_primoc,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_primoc.mk
+endif
+ifeq (pac_primou,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_primou.mk
+endif
+ifeq (pac_skyrocket,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_skyrocket.mk
+endif
+ifeq (pac_zeus,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_zeus.mk
+endif
+ifeq (pac_maguro,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_maguro.mk
+endif
+ifeq (pac_tass,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_tass.mk
+endif
+ifeq (pac_d710,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_d710.mk
+endif
+ifeq (pac_ville,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_ville.mk
 endif
