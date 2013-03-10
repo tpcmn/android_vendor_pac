@@ -115,3 +115,21 @@ endif
 ifeq (pac_ville,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_ville.mk
 endif
+ifeq (pac_i9103,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_i9103.mk
+endif
+ifeq (pac_p920,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p920.mk
+endif
+ifeq (pac_n7100,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_n7100.mk
+endif
+ifeq (pac_p5100,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p5100.mk
+endif
+ifeq (pac_p3100,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p3100.mk
+endif
+ifeq (pac_p3110,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p3110.mk
+endif

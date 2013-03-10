@@ -1,11 +1,13 @@
-# tiny gapps
-#include vendor/google/gapps_common.mk
 
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.ringtone=Themos.ogg \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
+
+# Copy specific ROM files
+PRODUCT_COPY_FILES += \
+    vendor/pac/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -74,9 +76,15 @@ TARGET_CUSTOM_RELEASETOOL := vendor/pac/tools/squisher
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pac.version=$(PAC_VERSION) \
-    ro.pacrom.version=$(BOARD)_PAC_JB_4.2.2-v$(PAC_VERSION)_$(shell date +%0d%^b%Y-%H%M%S) \
+    ro.pacrom.version=$(BOARD)_PAC_JB_4.2.2-v$(PAC_VERSION)_$(shell date +%Y%m%d) \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
     ro.papref.revision=$(PA_PREF_REVISION) \
-    ro.aokp.version=$(BOARD)_jb-mr1_build-1
+    ro.aokp.version=$(BOARD)_jb-mr1_build-1 
+
+# Setup OTA with goo.im
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=pacman \
+    ro.goo.rom=pacman \
+    ro.goo.version=$(DATE) 
