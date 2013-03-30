@@ -61,22 +61,22 @@ CM_BUILD := $(BOARD)
 # Add PA release version
 PA_VERSION_MAJOR = 3
 PA_VERSION_MINOR = 1
-PA_VERSION_MAINTENANCE = 0
+PA_VERSION_MAINTENANCE = 5
 PA_PREF_REVISION = 1
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 # PAC version
-PAC_VERSION_MAJOR = 20
-PAC_VERSION_MINOR = 1
-PAC_VERSION_MAINTENANCE = 0
+PAC_VERSION_MAJOR = 22
+PAC_VERSION_MINOR = 0
+PAC_VERSION_MAINTENANCE = 1
 PAC_VERSION := $(PAC_VERSION_MAJOR).$(PAC_VERSION_MINOR).$(PAC_VERSION_MAINTENANCE)
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pac/tools/squisher
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pac.version=$(PAC_VERSION) \
-    ro.pacrom.version=$(BOARD)_PAC_JB_4.2.2-v$(PAC_VERSION)_$(shell date +%Y%m%d) \
+    ro.pacrom.version=$(BOARD)_PAC_JB_4.2.2-v$(PAC_VERSION)_$(shell date +%Y%m%d-%H%M%S) \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
@@ -87,4 +87,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=pacman \
     ro.goo.rom=pacman \
-    ro.goo.version=$(DATE) 
+    ro.goo.version=$(shell date +%s)

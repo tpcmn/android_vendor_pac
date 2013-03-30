@@ -1,3 +1,6 @@
+ifeq (pac_ace,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_ace.mk
+endif
 ifeq (pac_anzu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_anzu.mk
 endif
@@ -132,4 +135,28 @@ ifeq (pac_p3100,$(TARGET_PRODUCT))
 endif
 ifeq (pac_p3110,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p3110.mk
+endif
+ifeq (pac_fascinatemtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_fascinatemtd.mk
+endif
+ifeq (pac_p5110,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p5110.mk
+endif
+ifeq (pac_saga,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_saga.mk
+endif
+ifeq (pac_p970,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_p970.mk
+endif
+ifeq (pac_crespo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_crespo.mk
+endif
+ifeq (pac_epicmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_epicmtd.mk
+endif
+ifeq (pac_grouper,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_grouper.mk
+endif
+ifeq (pac_tilapia,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pac_tilapia.mk
 endif

@@ -2,7 +2,7 @@
 ifeq (pac_p5100,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_mdpi
+OVERLAY_TARGET := pa_p51xx
 
 # AOKP device overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/device/p5100
@@ -14,6 +14,10 @@ $(shell cp -f vendor/pac/prebuilt/common/bootanimation_framework/android-logo-ma
 # PAC boot logo
 PRODUCT_COPY_FILES += \
     vendor/pac/prebuilt/common/bootlogo/pac_logo_720x1280.rle:root/logo.rle
+
+# Copy bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/pac/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
 
 # include ParanoidAndroid common configuration
 include vendor/pac/config/pac_common.mk

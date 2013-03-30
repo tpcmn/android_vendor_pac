@@ -4,7 +4,7 @@
         "account":      "cmartinbaughman",
         "repository":   "android_frameworks_av",
         "target_path":  "frameworks/av",
-        "revision":     "jellybean"
+        "revision":     "cm-10.1"
     },
     { 
         "remote":       "github",
@@ -53,13 +53,6 @@
         "account":      "cmartinbaughman",
         "repository":   "android_hardware_libhardware_legacy",
         "target_path":  "hardware/libhardware_legacy",
-        "revision":     "cm-10.1"
-    },
-	{
-        "remote":       "github",
-        "account":      "cmartinbaughman",
-        "repository":   "android_packages_apps_CMWimaxSettings",
-        "target_path":  "packages/apps/CMWimaxSettings",
         "revision":     "cm-10.1"
     }
 ]
